@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* #visual */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#visual{width: 100%;position: relative; z-index: 80;margin-top: -100px;}
+#visual>.main_bgi{width: 100%;}
+#visual>.main_bgi>img{display: block;width: 100%;}
+
+/* #content */
+#container{position: relative;z-index: 86; width: 100%; margin: 0 auto;}
+#container>.bestem_ct{width: 90%;height: 305px; margin: 0 auto;margin-top: -30px;}
+#container>.bestem_ct img{display: block;width: 100%;}
+
+#container>.banner_ct{width: 100%;margin-top: 40px;}
+#container>.banner_ct>.coke_tit{float: left;font-size: 18px;font-weight: 600;color: #000;text-align: center;margin: 20px;}
+#container>.banner_ct>a.banner{display: block;}
+#container>.banner_ct>a.banner>img{display: block; width: 100%;}
+
+#container>.pro_ct{width: 100%;height: 220px;margin-top: 30px;}
+#container .pro_tit{float: left;font-size: 18px;font-weight: 600;color: #000;text-align: center;margin: 20px;}
+
+#container>.gift_ct{position: relative; width: 90%;height: 280px;z-index: 60;margin-left: 5%;}
+#container>.gift_ct>img{display: block;width: 100%;}
+
+#container>.pst_ct{position: relative;top: -100px; z-index: 50; width: 100%;}
+#container>.pst_ct>img{display: block;width: 100%;}

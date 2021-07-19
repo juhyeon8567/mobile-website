@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>M_sub2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- js 연결 -->
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="common/js/gnb.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <div class="header_box">
+                    <h1 id="logo"><a href="../index.html"><img src="common/images/header_logo.png" alt="헤더로고이미지"></a></h1>
+                    <span class="menu_icon"><a href="javascript:void(0)">메뉴아이콘</a></span>
+                </div>
+                <div class="menu_bg"></div>
+                <nav id="gnb">
+                    <span class="close_btn"><a href="javascript:void(0)">닫기버튼</a></span>
+                    <div class="login_box">
+                        <span class="login_txt"><a href="#">로그인해주세요</a></span>
+                        <p>코크플레이의 짜릿한 해택을 받아보세요.!</p>
+                    </div>
+                    <ul class="main_menu">
+                        <li><a href="javascript:void(0)" class="depth">스토어</a></li>
+                        <li><a href="javascript:void(0)" class="depth">플레이</a></li>
+                        <li><a href="javascript:void(0)" class="depth">이벤트</a></li>
+                        <li><a href="javascript:void(0)" class="depth">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="visual" class="swiper-container mySwiper">
+            <ul  class="swiper-wrapper">
+                <li class="swiper-slide"><img src="imgs/s_01.png" alt="첫구매 이벤트이미지"></li>
+                <li class="swiper-slide"><img src="imgs/s_02.png" alt="접이식테이블 이벤트이미지"></li>
+                <li class="swiper-slide"><img src="imgs/s_03.png" alt="썸머굿즈 이벤트이미지"></li>
+                <li class="swiper-slide"><img src="imgs/s_04.png" alt="스프라이트 이벤트이미지"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+
+<!-- section 영역 -->
+        <section id="container">
+            <article class="summer_ct">
+                <h3 class="summer_tit"><img src="common/images/summer_tit.png" alt="썸머제목이미지"></h3>
+                <ul class="summer_item">
+                    <li><img src="imgs/item01.png" alt="캠핑박스이미지"></a></li>
+                    <li><img src="imgs/item02.png" alt="코카콜라도트백이미지"></a></li>
+                    <li><img src="imgs/item03.png" alt="샌드위치메이커이미지"></a></li>
+                </ul>
+            </article>
+            <article class="cf_ct">
+                <h3 class="cf_tit"><img src="common/images/cokeplay.png" alt="영상제목이미지"></h3>
+                <div class="cf_box">
+                    <iframe src="https://www.youtube.com/embed/KC0O_0zkDtU" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section> 
+
+<!-- footer 영역 -->
+        <footer id="footer">
+            <div class="footer_inner">
+                <address>
+                    <pre>
+    코-크 플레이 사업자정보 
+    한국코카콜라유한회사 (대표이사:최수정)
+    주소 : 경기도 의왕시 고천공업로 5
+    운영 담당자 : 1668-3282
+    사업자등록번호 : 138-81-02807
+    
+    코카콜라음료주식회사 (대표이사:이정애)
+    주소 : 경상남도 양산시 충렬로 269
+    사업자등록번호 : 102-81-41121
+    통신판매업신고번호 : 2009-경남양산-0053
+    CokePLAY 고객센터: 1668-3282
+    
+    cokeplaycs@gmail.com
+    스토어 문의(배송): 1668-3282(3번)
+    eun.hye.song@ccbk.co.kr</pre>
+                </address>
+                <P>이용약관 ㅣ 개인정보 처리방침 ㅣ 쇼핑몰 이용약관 ㅣ 고객센터</P>
+            </div>
+        </footer>
+
+<!-- visual Swiper js -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+        });
+      </script>
+    </div>
+</body>
+</html>

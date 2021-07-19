@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* container */
+#container{width: 100%;margin: 0 auto;}
+article.notice_ct{}
+article.notice_ct .notice_ct_item{width: 90%;margin: 0 auto;}
+article.notice_ct .notice_ct_item li{display: block;width: 100%;margin-bottom: 25px;}
+article.notice_ct .notice_ct_item li img{display: block;width: 100%;}

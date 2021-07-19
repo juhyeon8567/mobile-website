@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Mobile_coke</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="cokeplay.icon.png">
+    <!-- css -->
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="main.css/visual.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- javascript -->
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="common/js/gnb.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d85fa69e37deff5cb8f47fed717e6f10"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <div class="header_box">
+                    <h1 id="logo"><a href="index.html"><img src="common/images/white.logo.png" alt="로고이미지"></a></h1>
+                    <span class="menu_icon"><a href="javascript:void(0)">메뉴아이콘</a></span>
+                </div>
+                
+                <div class="menu_bg"></div>
+                <nav id="gnb">
+                    <span class="close_btn"><a href="javascript:void(0)">닫기버튼</a></span>
+                    <div class="login_box">
+                        <span class="login_txt"><a href="#">로그인해주세요</a></span>
+                        <p>코크플레이의 짜릿한 해택을 받아보세요.!</p>
+                    </div>
+                    <ul class="main_menu">
+                        <!-- a = sub 링크 걸기 -->
+                        <li><a href="m_sub1/index.sub.html" class="depth">스토어</a></li>
+                        <li><a href="m_sub2/index.sub2.html" class="depth">이벤트</a></li>
+                        <li><a href="m_sub3/index.sub3.html" class="depth">플레이</a></li>
+                        <li><a href="m_sub4/index.sub4.html" class="depth">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+<!-- visual -->
+        <div id="visual">
+            <div class="main_bgi">
+                <img src="common/images/headermain.png" alt="메인콜라이미지">
+            </div>
+        </div>
+        <section id="container">
+            <h2 class="hidden">콘텐츠영역</h2>
+<!-- 상품영역 -->
+            <article class="bestem_ct">
+                <img src="imgs/best_item.png" alt="베스트아이템이미지">
+            </article>
+<!-- 배너영역 -->
+            <article class="banner_ct">
+                <h3 class="coke_tit">coke-play ></h3>
+                <a href="#" class="banner"><img src="imgs/sec02.png" alt="모바일자판기이미지"></a>
+            </article>
+<!-- 프로모션 배너영역 -->
+            <article class="pro_ct swiper-container mySwiper">
+                <h3 class="pro_tit">Promotion ></h3>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="imgs/b1.jpg" alt="선착순선물증정이미지"></li>
+                    <li class="swiper-slide"><img src="imgs/b2.jpg" alt="조지아증정이미지"></li>
+                    <li class="swiper-slide"><img src="imgs/b3.jpg" alt="골라담기이미지"></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </article>
+<!-- 응모가능상품 영역 -->
+            <article class="gift_ct">
+                <img src="imgs/sec04_gift.png" alt="응모가능한상품이미지">
+            </article>
+<!-- 배경이미지 영역 -->
+            <article class="pst_ct">
+                <img src="imgs/sec04_bgi.png" alt="코카콜라포스터이미지">
+            </article>
+        </section>
+
+        <!-- pre 태그로 address 고정 -->
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+                    <address>
+                        <pre>
+코-크 플레이 사업자정보 
+한국코카콜라유한회사 (대표이사:최수정)
+주소 : 경기도 의왕시 고천공업로 5
+운영 담당자 : 1668-3282
+사업자등록번호 : 138-81-02807
+
+코카콜라음료주식회사 (대표이사:이정애)
+주소 : 경상남도 양산시 충렬로 269
+사업자등록번호 : 102-81-41121
+통신판매업신고번호 : 2009-경남양산-0053
+CokePLAY 고객센터: 1668-3282
+
+cokeplaycs@gmail.com
+스토어 문의(배송): 1668-3282(3번)
+eun.hye.song@ccbk.co.kr</pre>
+                    </address>
+                    <P>이용약관 ㅣ 개인정보 처리방침 ㅣ 쇼핑몰 이용약관 ㅣ 고객센터</P>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- swiper css 1개 +js 2개 + 마크업 네이밍 -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          initialSlide: 2,
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* #visual swiper */
+.swiper-container {width: 100%;height: 100%;margin-bottom: 30px;}
+.swiper-slide {text-align: center;font-size: 18px;background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+.swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover;}
+
+/* #container */
+#container{display: flex;flex-flow: row wrap; width: 100%;margin: 0 auto;margin-bottom: 50px;}
+
+/* .menu_ct */
+#container>.menu_ct{display: flex;justify-content: center; width: 100%;height: 50px;margin: 0 auto;}
+#container>.menu_ct>.drink_menu{width: 100%;text-align: center;line-height: 30px;color: #191919;font-weight: 600;}
+
+/* .item_ct */
+#container .item_ct{ width: 100%;}
+#container .item_ct .item_ct_inner{width: 90%;margin: 0 auto;}
+#container .item_ct .item_ct_inner ul.item_box{display: flex;flex-flow: row wrap; width: 100%;margin: 0 auto;}
+#container .item_ct .item_ct_inner ul.item_box li{width: 50%;margin-bottom: 20px;}
+#container .item_ct .item_ct_inner ul.item_box li img{display: block; width: 100%;}
+#container .item_ct .item_ct_inner ul.item_box li span{}
+#container .item_ct .item_ct_inner ul.item_box li span a{display: block;width: 95%; font-size: 3.5vw;font-weight: 600; color: #222;line-height: 20px;}
+#container .item_ct .item_ct_inner ul.item_box li p{font-size: 4.5vw;font-weight: 600; color: #222;}
+
+#container span.add_tit{margin: 0 auto;margin-top: 60px; justify-content: center;font-size: 4.5vw;font-weight: bold;}
+
+/* #container .item_ct_inner .item_box figure{width: 50%;}
+#container .item_ct_inner .item_box figure img{display: block; width: 100%;} */
+/* #container .item_box figcaption>span{}
+#container .item_box figcaption>span>a{width: 100%; display: block;font-weight: 600; color: #000;line-height: 20px;}
+#container .item_box figcaption>p{font-size: 5vw;font-weight: 600; color: rgb(233, 0, 0);} */
